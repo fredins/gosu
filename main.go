@@ -22,6 +22,7 @@ type block struct {
 	inSh  bool
 	upInt int
 	upSig int
+    color string
 
 	args []string // used internally
 	pos  int      // used internally
@@ -80,11 +81,12 @@ func main() {
 			for i := 0; i < len(blocks); i++ {
 				if barBytesArr[blocks[i].pos] != nil {
 					finalBytesBuffer.Write(delim)
+                    finalBytesBuffer.Write([]byte(blocks[i].color))
 					finalBytesBuffer.Write(barBytesArr[blocks[i].pos])
 				}
 			}
 
-			finalBytes := bytes.TrimPrefix(finalBytesBuffer.Bytes(), delim)
+            finalBytes := finalBytesBuffer.Bytes()
 			xproto.ChangeProperty(x, xproto.PropModeReplace, root, xproto.AtomWmName, xproto.AtomString, 8, uint32(len(finalBytes)), finalBytes) // set the root window name
 			finalBytesBuffer.Reset()
 		}
