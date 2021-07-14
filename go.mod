@@ -1,4 +1,4 @@
-module github.com/lordrusk/gocaudices
+module github.com/Fredins/gosu
 
 go 1.15
 
