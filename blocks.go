@@ -10,7 +10,7 @@ var (
 		// {cmd: "volume", upSig: 10, upInt: 3, color:"^c#a3be8c^"}, need to remove pulseaudio deamon (10M)
 		{cmd: "weather", upInt: 18000, upSig: 5, color:"^c#5e81ac^"},
 		// {cmd: "recicon", upSig: 9},
-		{cmd: "music", upSig: 11},
+		// {cmd: "music", upSig: 11},
 		// {cmd: "pacpackages", upSig: 8},
 		// {cmd: "news", upSig: 6},
 		// {cmd: "georona | cut -d' ' -f1,3", inSh: true, upInt: 18000, upSig: 19}, // example of command that is run in shell
