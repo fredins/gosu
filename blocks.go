@@ -22,7 +22,7 @@ var (
 		// {cmd: "astrological", upInt: 18000, upSig: 18},
 		// {cmd: "mailbox", upSig: 12},
 		// {cmd: "battery", upInt: 5, upSig: 10},
-		{cmd: "nettraf", upInt: 5, upSig: 16, color:"^c#81a1c1^"},
-		{cmd: "internet", upInt: 5, upSig: 4, color:"^c#eceff4^"},
+		{cmd: "nettraf", upInt: 2, upSig: 16, color:"^c#81a1c1^"},
+		// {cmd: "internet", upInt: 5, upSig: 4, color:"^c#eceff4^"},
 	}
 )
