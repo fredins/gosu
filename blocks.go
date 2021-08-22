@@ -18,7 +18,7 @@ var (
 		{cmd: "memory", upInt: 3, upSig: 14, color:"^c#ebcb8b^"},
 		{cmd: "cpu", upInt: 3, upSig: 13, color:"^c#88c0d0^"},
 		// {cmd: "cpubars", upInt: 1, upSig: 22},
-		{cmd: "disk sda3", upSig: 15, color:"^c#b48ead^"},
+		{cmd: "disk /", upSig: 15, color:"^c#b48ead^"},
 		// {cmd: "astrological", upInt: 18000, upSig: 18},
 		// {cmd: "mailbox", upSig: 12},
 		// {cmd: "battery", upInt: 5, upSig: 10},
